@@ -1,0 +1,152 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9ece5;
+    color: #2b2b2b;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background-color: #344e41;
+}
+
+/* HERO */
+
+.hero{
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(
+        135deg,
+        #344e41,
+        #588157,
+        #a3b18a
+    );
+
+    color: white;
+}
+
+.hero h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 18px;
+}
+
+/* GRID */
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 25px;
+}
+
+/* PRODUCTOS */
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CARDS */
+
+.card-producto{
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+}
+
+.card-producto:hover{
+    transform: scale(1.03);
+}
+
+.card-producto img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-producto h2{
+    padding: 15px 15px 5px;
+    color: #bc4749;
+}
+
+.card-producto p{
+    padding: 0 15px;
+}
+
+.card-producto span{
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #344e41;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    background-color: #dad7cd;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.sidebar h3{
+    margin-bottom: 10px;
+    color: #344e41;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #344e41;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* TABLET */
+
+@media (min-width: 576px){
+
+    .productos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-producto{
+        width: 45%;
+    }
+
+}
+
+/* DESKTOP */
+
+@media (min-width: 992px){
+
+    .contenedor{
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .card-producto{
+        width: 30%;
+    }
+
+}

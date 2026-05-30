@@ -6,7 +6,7 @@ Muestra la versión instalada de Git.
 
 Ejemplo:
 
-```bash id="jjlwm5"
+```bash
 git --version
 ```
 
@@ -18,7 +18,7 @@ Inicializa un repositorio Git en la carpeta actual.
 
 Ejemplo:
 
-```bash id="6jlwm5"
+```bash
 git init
 ```
 
@@ -26,11 +26,11 @@ git init
 
 ## git add
 
-Agrega archivos al área de preparación.
+Agrega archivos al área de preparación (staging).
 
 Ejemplo:
 
-```bash id="jlwm5y"
+```bash
 git add .
 ```
 
@@ -38,11 +38,11 @@ git add .
 
 ## git commit
 
-Guarda cambios con un mensaje descriptivo.
+Guarda los cambios con un mensaje descriptivo.
 
 Ejemplo:
 
-```bash id="jlwm5z"
+```bash
 git commit -m "Primer commit"
 ```
 
@@ -54,6 +54,16 @@ Muestra el estado actual del repositorio.
 
 Ejemplo:
 
-```bash id="0zjlwm"
+```bash
+git status
+```
+
+---
+
+## Flujo básico de trabajo
+
+```bash
+git add .
+git commit -m "Mensaje descriptivo"
 git status
 ```
